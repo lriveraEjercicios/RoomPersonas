@@ -20,6 +20,14 @@ public class Persona {
         id = UUID.randomUUID().toString();
     }
 
+    public Persona(String name, String surname, int age, String mail) {
+        id = UUID.randomUUID().toString();
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.mail = mail;
+    }
+
     @NonNull
     public String getId() {
         return id;
